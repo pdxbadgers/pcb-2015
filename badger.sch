@@ -859,6 +859,133 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </deviceset>
 </devicesets>
 </library>
+<library name="esp8266modules">
+<packages>
+<package name="ESP12E-SMD">
+<description>ESP8266 Module 12E</description>
+<wire x1="7.9" y1="14.2" x2="7.9" y2="6.9" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="6.9" x2="-8.1" y2="14.2" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="14.2" x2="7.9" y2="14.2" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="8.6" x2="-4.9" y2="13.5" width="0.6096" layer="21"/>
+<wire x1="-4.9" y1="13.5" x2="-4" y2="13.5" width="0.6096" layer="21"/>
+<wire x1="-4" y1="13.5" x2="-4" y2="9.8" width="0.6096" layer="21"/>
+<wire x1="-4" y1="9.8" x2="-3" y2="9.8" width="0.6096" layer="21"/>
+<wire x1="-3" y1="9.8" x2="-3" y2="13.4" width="0.6096" layer="21"/>
+<wire x1="-3" y1="13.4" x2="-1.8" y2="13.4" width="0.6096" layer="21"/>
+<wire x1="-1.8" y1="13.4" x2="-1.8" y2="9.8" width="0.6096" layer="21"/>
+<wire x1="-1.8" y1="9.8" x2="-0.6" y2="9.8" width="0.6096" layer="21"/>
+<wire x1="-0.6" y1="9.8" x2="-0.6" y2="13.4" width="0.6096" layer="21"/>
+<wire x1="-0.6" y1="13.4" x2="0.5" y2="13.4" width="0.6096" layer="21"/>
+<wire x1="0.5" y1="13.4" x2="0.5" y2="9.9" width="0.6096" layer="21"/>
+<wire x1="0.5" y1="9.9" x2="1.6" y2="9.9" width="0.6096" layer="21"/>
+<wire x1="1.6" y1="9.9" x2="1.6" y2="13.4" width="0.6096" layer="21"/>
+<wire x1="1.6" y1="13.4" x2="5.6" y2="13.4" width="0.6096" layer="21"/>
+<wire x1="-4.9" y1="8.5" x2="-4.9" y2="7.9" width="0.6096" layer="21"/>
+<wire x1="-4.9" y1="7.9" x2="1.6" y2="7.9" width="0.6096" layer="21"/>
+<text x="0" y="3" size="1.4224" layer="21" align="bottom-center">ESP - 12E</text>
+<text x="-7.7" y="-11.9" size="1.4224" layer="27">&gt;Value</text>
+<text x="-7.7" y="15.1" size="1.4224" layer="25">&gt;Name</text>
+<smd name="RESET" x="-8.3" y="5.8" dx="3" dy="1.2" layer="1"/>
+<smd name="ADC" x="-8.3" y="3.8" dx="3" dy="1.2" layer="1"/>
+<smd name="CH_PD" x="-8.3" y="1.8" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO16" x="-8.3" y="-0.2" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO14" x="-8.3" y="-2.2" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO12" x="-8.3" y="-4.2" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO13" x="-8.3" y="-6.2" dx="3" dy="1.2" layer="1"/>
+<smd name="VCC" x="-8.3" y="-8.2" dx="3" dy="1.2" layer="1"/>
+<smd name="TXD0" x="8.1" y="5.8" dx="3" dy="1.2" layer="1"/>
+<smd name="RXD0" x="8.1" y="3.8" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO5" x="8.1" y="1.8" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO4" x="8.1" y="-0.2" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO0" x="8.1" y="-2.2" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO2" x="8.1" y="-4.2" dx="3" dy="1.2" layer="1"/>
+<smd name="GPIO15" x="8.1" y="-6.2" dx="3" dy="1.2" layer="1"/>
+<smd name="GND" x="8.1" y="-8.2" dx="3" dy="1.2" layer="1"/>
+<smd name="MOSI" x="3.2" y="-10.3" dx="3" dy="1.2" layer="1" rot="R90"/>
+<smd name="GPIO10" x="1.2" y="-10.3" dx="3" dy="1.2" layer="1" rot="R90"/>
+<smd name="GPIO9" x="-0.8" y="-10.3" dx="3" dy="1.2" layer="1" rot="R90"/>
+<smd name="MISO" x="-2.8" y="-10.3" dx="3" dy="1.2" layer="1" rot="R90"/>
+<smd name="CS0" x="-4.8" y="-10.3" dx="3" dy="1.2" layer="1" rot="R90"/>
+<smd name="SCLK" x="5.2" y="-10.3" dx="3" dy="1.2" layer="1" rot="R90"/>
+<wire x1="-5.8" y1="-9.8" x2="-8.1" y2="-9.8" width="0.127" layer="21"/>
+<wire x1="7.9" y1="-9.8" x2="6.2" y2="-9.8" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ESP12E">
+<description>ESP8266-12E Module</description>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="RESET" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="ADC" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="CH_PD" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="GPIO16" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="GPIO14" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="GPIO12" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="GPIO13" x="-17.78" y="-7.62" visible="pin" length="middle"/>
+<pin name="VCC" x="-17.78" y="-10.16" visible="pin" length="middle"/>
+<pin name="GND" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO15" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO2" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO0" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO5" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO4" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RX" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="TX" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<text x="-12.7" y="10.16" size="1.778" layer="95">&gt;Name</text>
+<text x="7.62" y="-25.4" size="1.778" layer="96">&gt;Value</text>
+<pin name="CS0" x="-7.62" y="-27.94" visible="pin" length="middle" rot="R90"/>
+<pin name="MISO" x="-5.08" y="-27.94" visible="pin" length="middle" rot="R90"/>
+<pin name="*GPIO9" x="-2.54" y="-27.94" visible="pin" length="middle" rot="R90"/>
+<pin name="*GPIO10" x="0" y="-27.94" visible="pin" length="middle" rot="R90"/>
+<pin name="MOSI" x="2.54" y="-27.94" visible="pin" length="middle" rot="R90"/>
+<pin name="SCLK" x="5.08" y="-27.94" visible="pin" length="middle" rot="R90"/>
+<text x="12.7" y="-20.32" size="1.27" layer="97">* Can only be used on the ESP12-D
+(Untested. Info from esp8266 wiki)</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ESP12E" prefix="U" uservalue="yes">
+<description>ESP12E Module</description>
+<gates>
+<gate name="G$1" symbol="ESP12E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="ESP12E-SMD">
+<connects>
+<connect gate="G$1" pin="*GPIO10" pad="GPIO10"/>
+<connect gate="G$1" pin="*GPIO9" pad="GPIO9"/>
+<connect gate="G$1" pin="ADC" pad="ADC"/>
+<connect gate="G$1" pin="CH_PD" pad="CH_PD"/>
+<connect gate="G$1" pin="CS0" pad="CS0"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
+<connect gate="G$1" pin="GPIO14" pad="GPIO14"/>
+<connect gate="G$1" pin="GPIO15" pad="GPIO15"/>
+<connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
+<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
+<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="RX" pad="RXD0"/>
+<connect gate="G$1" pin="SCLK" pad="SCLK"/>
+<connect gate="G$1" pin="TX" pad="TXD0"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -873,12 +1000,14 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="U1" library="SparkFun" deviceset="V_REG_NCP1400" device="SOT23-5" value="NCP1402"/>
 <part name="D1" library="SparkFun" deviceset="DIODE" device="SMA" value="MBRA140"/>
 <part name="C1" library="SparkFun" deviceset="CAP_POL" device="1206" value="10uF"/>
-<part name="C2" library="SparkFun" deviceset="CAP_POL" device="3528" value="68uF"/>
+<part name="C2" library="SparkFun" deviceset="CAP_POL" device="3528" value="100uF"/>
 <part name="L1" library="SparkFun" deviceset="INDUCTOR" device="CR54" value="47uH"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
+<part name="U2" library="esp8266modules" deviceset="ESP12E" device="SMD"/>
+<part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -901,6 +1030,8 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <instance part="GND2" gate="1" x="20.32" y="48.26"/>
 <instance part="GND3" gate="1" x="45.72" y="48.26"/>
 <instance part="GND4" gate="1" x="78.74" y="48.26"/>
+<instance part="U2" gate="G$1" x="55.88" y="25.4"/>
+<instance part="GND5" gate="1" x="76.2" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -915,30 +1046,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <pinref part="U1" gate="G$1" pin="LX"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="VOUT" class="0">
-<segment>
-<wire x1="66.04" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="63.5" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="73.66" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="63.5" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
-<junction x="68.58" y="63.5"/>
-<junction x="78.74" y="63.5"/>
-<label x="81.28" y="63.5" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="EN"/>
-<pinref part="U1" gate="G$1" pin="OUT"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="C2" gate="G$1" pin="+"/>
-</segment>
-<segment>
-<wire x1="10.16" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
-<label x="10.16" y="60.96" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -964,6 +1071,12 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="71.12" y1="15.24" x2="76.2" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="15.24" x2="76.2" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -977,9 +1090,44 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <pinref part="JP1" gate="G$1" pin="3"/>
 </segment>
 </net>
+<net name="VCC" class="0">
+<segment>
+<wire x1="66.04" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="63.5" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="73.66" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="63.5" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
+<junction x="68.58" y="63.5"/>
+<junction x="78.74" y="63.5"/>
+<label x="81.28" y="63.5" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="EN"/>
+<pinref part="U1" gate="G$1" pin="OUT"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+</segment>
+<segment>
+<wire x1="10.16" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="10.16" y="60.96" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VCC"/>
+<wire x1="38.1" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
+<label x="27.94" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
