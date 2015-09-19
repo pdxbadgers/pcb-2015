@@ -4862,6 +4862,19 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pad name="P$1" x="3" y="6.265" drill="0.9" shape="square"/>
 <pad name="P$2" x="3" y="17.735" drill="0.9"/>
 </package>
+<package name="SSSS8">
+<description>ALPS SSSS810701 Slide switch</description>
+<wire x1="-3.35" y1="-1.3" x2="-3.35" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="1.3" x2="3.35" y2="1.3" width="0.127" layer="21"/>
+<wire x1="3.35" y1="1.3" x2="3.35" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="3.35" y1="-1.3" x2="-3.35" y2="-1.3" width="0.127" layer="21"/>
+<hole x="-1.5" y="0" drill="0.9"/>
+<hole x="1.5" y="0" drill="0.9"/>
+<smd name="P$2" x="0.75" y="1.75" dx="0.7" dy="1.5" layer="1"/>
+<smd name="P$3" x="2.25" y="1.75" dx="0.7" dy="1.5" layer="1"/>
+<smd name="P$1" x="-2.25" y="1.75" dx="0.7" dy="1.5" layer="1"/>
+<text x="5.08" y="-1.27" size="1.27" layer="1" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BATTERY">
@@ -4875,6 +4888,19 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pin name="-" x="5.08" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
 <pin name="+" x="-5.08" y="0" visible="off" length="short" direction="pwr"/>
 </symbol>
+<symbol name="ALPSSWITCH">
+<wire x1="-109.22" y1="2.54" x2="-106.68" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-106.68" y1="0" x2="-106.045" y2="0" width="0.127" layer="94"/>
+<wire x1="-106.68" y1="5.08" x2="-106.045" y2="5.08" width="0.1524" layer="94"/>
+<circle x="-106.68" y="5.08" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="-106.68" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="-109.22" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<text x="-111.125" y="-3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-111.76" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="-111.76" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="S" x="-104.14" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="O" x="-104.14" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BATTERY">
@@ -4886,6 +4912,24 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="G$1" pin="+" pad="P$1"/>
 <connect gate="G$1" pin="-" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SSSS810701">
+<description>ALSP SSSS810701</description>
+<gates>
+<gate name="G$1" symbol="ALPSSWITCH" x="106.68" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SSSS8">
+<connects>
+<connect gate="G$1" pin="O" pad="P$3"/>
+<connect gate="G$1" pin="P" pad="P$2"/>
+<connect gate="G$1" pin="S" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4916,7 +4960,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U2" library="esp8266modules" deviceset="ESP12E" device="SMD"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR-ARRAY" device="0603-ARV"/>
-<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD" value="RESET"/>
@@ -4946,6 +4989,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$1" library="badger" deviceset="BATTERY" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
+<part name="U$2" library="badger" deviceset="SSSS810701" device=""/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4953,7 +4998,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="35.56" y="20.32" size="1.778" layer="91">TODO:
 RGB LED
 CHEAP-O-CONFIGURATION
-POWER SWITCH
 </text>
 </plain>
 <instances>
@@ -4977,7 +5021,6 @@ POWER SWITCH
 <instance part="R1" gate="B" x="109.22" y="15.24" rot="R270"/>
 <instance part="R1" gate="R" x="177.8" y="68.58" rot="R270"/>
 <instance part="R1" gate="D" x="101.6" y="76.2" rot="R90"/>
-<instance part="SUPPLY1" gate="G$1" x="88.9" y="66.04"/>
 <instance part="SUPPLY2" gate="G$1" x="101.6" y="83.82"/>
 <instance part="SUPPLY3" gate="G$1" x="177.8" y="83.82"/>
 <instance part="S1" gate="G$1" x="119.38" y="91.44" rot="R90"/>
@@ -5007,6 +5050,8 @@ POWER SWITCH
 <instance part="GND9" gate="1" x="109.22" y="5.08"/>
 <instance part="U$1" gate="G$1" x="-50.8" y="76.2" rot="R270"/>
 <instance part="GND10" gate="1" x="-50.8" y="63.5"/>
+<instance part="U$2" gate="G$1" x="149.86" y="-5.08"/>
+<instance part="SUPPLY1" gate="G$1" x="27.94" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -5132,23 +5177,6 @@ POWER SWITCH
 <wire x1="-50.8" y1="81.28" x2="-50.8" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="88.9" x2="-45.72" y2="88.9" width="0.1524" layer="91"/>
 <label x="-48.26" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="VCC"/>
-<wire x1="127" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
-<label x="116.84" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="VCC"/>
-<wire x1="-25.4" y1="33.02" x2="-12.7" y2="33.02" width="0.1524" layer="91"/>
-<label x="-17.78" y="33.02" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="-20.32" x2="109.22" y2="-20.32" width="0.1524" layer="91"/>
-<label x="104.14" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -5303,6 +5331,11 @@ POWER SWITCH
 <wire x1="134.62" y1="-5.08" x2="124.46" y2="-5.08" width="0.1524" layer="91"/>
 <label x="124.46" y="-5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="TXO"/>
+<wire x1="-25.4" y1="30.48" x2="-12.7" y2="30.48" width="0.1524" layer="91"/>
+<label x="-17.78" y="30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TX" class="0">
 <segment>
@@ -5315,27 +5348,13 @@ POWER SWITCH
 <wire x1="134.62" y1="-2.54" x2="124.46" y2="-2.54" width="0.1524" layer="91"/>
 <label x="124.46" y="-2.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="RXI"/>
+<wire x1="-25.4" y1="27.94" x2="-12.7" y2="27.94" width="0.1524" layer="91"/>
+<label x="-17.78" y="27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
-<segment>
-<wire x1="66.04" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="63.5" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="73.66" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="63.5" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
-<junction x="68.58" y="63.5"/>
-<junction x="78.74" y="63.5"/>
-<label x="81.28" y="63.5" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="EN"/>
-<pinref part="U1" gate="G$1" pin="OUT"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="C2" gate="G$1" pin="+"/>
-<pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
-<wire x1="88.9" y1="63.5" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
 <pinref part="R1" gate="D" pin="2"/>
@@ -5350,6 +5369,23 @@ POWER SWITCH
 <pinref part="R1" gate="R" pin="1"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <wire x1="177.8" y1="73.66" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
+<wire x1="27.94" y1="0" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P"/>
+<wire x1="38.1" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
+<label x="33.02" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="-20.32" x2="109.22" y2="-20.32" width="0.1524" layer="91"/>
+<label x="104.14" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VCC"/>
+<wire x1="127" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
+<label x="116.84" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH_PD" class="0">
@@ -5369,20 +5405,6 @@ POWER SWITCH
 <pinref part="JP2" gate="G$1" pin="6"/>
 <wire x1="99.06" y1="-7.62" x2="109.22" y2="-7.62" width="0.1524" layer="91"/>
 <label x="104.14" y="-7.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="TXO"/>
-<wire x1="-25.4" y1="30.48" x2="-12.7" y2="30.48" width="0.1524" layer="91"/>
-<label x="-17.78" y="30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="RXI"/>
-<wire x1="-25.4" y1="27.94" x2="-12.7" y2="27.94" width="0.1524" layer="91"/>
-<label x="-17.78" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO16" class="0">
@@ -5561,6 +5583,42 @@ POWER SWITCH
 <wire x1="104.14" y1="25.4" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R1" gate="B" pin="1"/>
 <wire x1="109.22" y1="25.4" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VREG" class="0">
+<segment>
+<wire x1="66.04" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="63.5" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="73.66" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="63.5" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
+<junction x="68.58" y="63.5"/>
+<junction x="78.74" y="63.5"/>
+<label x="81.28" y="63.5" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="EN"/>
+<pinref part="U1" gate="G$1" pin="OUT"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="O"/>
+<wire x1="45.72" y1="0" x2="60.96" y2="0" width="0.1524" layer="91"/>
+<label x="55.88" y="0" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VFTDI" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="S"/>
+<wire x1="45.72" y1="-5.08" x2="58.42" y2="-5.08" width="0.1524" layer="91"/>
+<label x="55.88" y="-5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="VCC"/>
+<wire x1="-25.4" y1="33.02" x2="-12.7" y2="33.02" width="0.1524" layer="91"/>
+<label x="-17.78" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
