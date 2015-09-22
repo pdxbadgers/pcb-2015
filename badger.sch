@@ -5556,9 +5556,6 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 <sheets>
 <sheet>
 <plain>
-<text x="35.56" y="20.32" size="1.778" layer="91">TODO:
-SPEAKER
-</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="58.42" y="58.42" rot="MR0"/>
