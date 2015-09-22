@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -5486,6 +5490,92 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PAD.02X.02">
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03">
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.04">
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="TP_15TH">
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
+<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TEST-POINT">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;Value</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEST-POINT" prefix="TP">
+<description>Bare copper test points for troubleshooting or ICT</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="PAD.02X.02">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="PAD.03X.03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X4" package="PAD.03X.04">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TP_15TH_THRU" package="TP_15TH">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5552,6 +5642,9 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$3" library="adafruit" deviceset="PS603" device="SPK"/>
+<part name="VIN" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X4"/>
+<part name="VREG" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X4"/>
+<part name="V3.3" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X4"/>
 </parts>
 <sheets>
 <sheet>
@@ -5647,6 +5740,9 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 <instance part="Q1" gate="G$1" x="-83.82" y="48.26" rot="R180"/>
 <instance part="GND14" gate="1" x="-83.82" y="35.56"/>
 <instance part="U$3" gate="G$1" x="-83.82" y="60.96" rot="R90"/>
+<instance part="VIN" gate="G$1" x="-119.38" y="-20.32"/>
+<instance part="VREG" gate="G$1" x="-119.38" y="-30.48"/>
+<instance part="V3.3" gate="G$1" x="-119.38" y="-40.64"/>
 </instances>
 <busses>
 </busses>
@@ -5809,6 +5905,11 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 <wire x1="-83.82" y1="76.2" x2="-93.98" y2="76.2" width="0.1524" layer="91"/>
 <label x="-91.44" y="76.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="VIN" gate="G$1" pin="1"/>
+<wire x1="-119.38" y1="-20.32" x2="-129.54" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-129.54" y="-20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -5943,14 +6044,14 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 <label x="162.56" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="4"/>
-<wire x1="134.62" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
-<label x="124.46" y="-10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CHEAPO-3" gate="G$1" pin="3"/>
 <wire x1="-66.04" y1="-2.54" x2="-58.42" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-66.04" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="3"/>
+<wire x1="134.62" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
+<label x="124.46" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
@@ -5960,14 +6061,14 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 <label x="162.56" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="134.62" y1="-7.62" x2="124.46" y2="-7.62" width="0.1524" layer="91"/>
-<label x="124.46" y="-7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CHEAPO-2" gate="G$1" pin="3"/>
 <wire x1="-50.8" y1="5.08" x2="-40.64" y2="5.08" width="0.1524" layer="91"/>
 <label x="-45.72" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="4"/>
+<wire x1="134.62" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
+<label x="124.46" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -6244,6 +6345,11 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 <wire x1="45.72" y1="0" x2="60.96" y2="0" width="0.1524" layer="91"/>
 <label x="55.88" y="0" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="VREG" gate="G$1" pin="1"/>
+<wire x1="-119.38" y1="-30.48" x2="-129.54" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-129.54" y="-30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VFTDI" class="0">
 <segment>
@@ -6343,6 +6449,13 @@ Small 8 ohm speaker, from Mouser. Can SMT solder to board
 <pinref part="U$3" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="-83.82" y1="55.88" x2="-83.82" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="V3.3" class="0">
+<segment>
+<pinref part="V3.3" gate="G$1" pin="1"/>
+<wire x1="-119.38" y1="-40.64" x2="-129.54" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-129.54" y="-40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
