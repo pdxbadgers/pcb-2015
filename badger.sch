@@ -9888,7 +9888,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$1" library="badger" deviceset="BATTERY" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$2" library="badger" deviceset="SSSS810701" device=""/>
+<part name="S3" library="badger" deviceset="SSSS810701" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="D5" library="Seeed-OPL-Diode" deviceset="DIP-LED-RGB-COMMON-ANODE(4P-D5MM)" device="" value="FZR50RGB00T-C"/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -9907,7 +9907,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="CHEAPO-2" library="SparkFun-Retired" deviceset="SOLDERJUMPER_2WAY" device="T"/>
 <part name="CHEAPO-3" library="SparkFun-Retired" deviceset="SOLDERJUMPER_2WAY" device="T"/>
 <part name="CHEAPO-7" library="SparkFun-Retired" deviceset="SOLDERJUMPER_2WAY" device="T"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW" value="2N7002PW"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$3" library="adafruit" deviceset="PS603" device="SPK"/>
 <part name="VIN" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X4"/>
@@ -9969,7 +9969,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND9" gate="1" x="109.22" y="5.08"/>
 <instance part="U$1" gate="G$1" x="-50.8" y="76.2" rot="R270"/>
 <instance part="GND10" gate="1" x="-50.8" y="63.5"/>
-<instance part="U$2" gate="G$1" x="149.86" y="-5.08"/>
+<instance part="S3" gate="G$1" x="149.86" y="-5.08"/>
 <instance part="SUPPLY1" gate="G$1" x="27.94" y="0"/>
 <instance part="D5" gate="G$1" x="20.32" y="-20.32" rot="R270"/>
 <instance part="SUPPLY5" gate="G$1" x="20.32" y="-10.16"/>
@@ -10426,7 +10426,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <wire x1="27.94" y1="0" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P"/>
+<pinref part="S3" gate="G$1" pin="P"/>
 <wire x1="38.1" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
 <label x="33.02" y="-2.54" size="1.778" layer="95"/>
 </segment>
@@ -10655,7 +10655,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C2" gate="G$1" pin="+"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="O"/>
+<pinref part="S3" gate="G$1" pin="O"/>
 <wire x1="45.72" y1="0" x2="60.96" y2="0" width="0.1524" layer="91"/>
 <label x="55.88" y="0" size="1.778" layer="95"/>
 </segment>
@@ -10667,7 +10667,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="VFTDI" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="S"/>
+<pinref part="S3" gate="G$1" pin="S"/>
 <wire x1="45.72" y1="-5.08" x2="58.42" y2="-5.08" width="0.1524" layer="91"/>
 <label x="55.88" y="-5.08" size="1.778" layer="95"/>
 </segment>
