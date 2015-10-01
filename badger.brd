@@ -5389,7 +5389,7 @@
 <text x="53.0361875" y="57.24239375" size="1.016" layer="26" rot="MR270">V3.3</text>
 <text x="54.899440625" y="56.925659375" size="1.016" layer="26" rot="MR270">VREG</text>
 <text x="27.58880625" y="40.334403125" size="1.016" layer="26" rot="MR0">VIN</text>
-<text x="38.5" y="24" size="1.778" layer="25">http://badgers.bsidespdx.org</text>
+<text x="39.44338125" y="28.789475" size="1.778" layer="25">http://badgers.bsidespdx.org</text>
 <rectangle x1="0.7239" y1="-0.048259375" x2="1.496059375" y2="0.048259375" layer="211"/>
 <rectangle x1="0.7239" y1="0.048259375" x2="1.496059375" y2="0.14478125" layer="211"/>
 <rectangle x1="0.62738125" y1="0.14478125" x2="1.6891" y2="0.241553125" layer="211"/>
