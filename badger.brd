@@ -18352,6 +18352,9 @@ design rules under a new name.</description>
 <via x="115.96334375" y="63.93223125" extent="1-16" drill="0.6"/>
 <via x="79.897146875" y="52.0311125" extent="1-16" drill="0.6"/>
 <via x="68.2863" y="44.701765625" extent="1-16" drill="0.6"/>
+<via x="93.9753" y="54.933825" extent="1-16" drill="0.6"/>
+<via x="98.547071875" y="52.829359375" extent="1-16" drill="0.6"/>
+<via x="103.11884375" y="55.224096875" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="VIN">
 <contactref element="L1" pad="P$1"/>
