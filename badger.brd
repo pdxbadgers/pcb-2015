@@ -17908,7 +17908,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default *">
+<designrules name="oshpark-2layer *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -17916,33 +17916,29 @@ die meisten Anwendungen passen. Sollte ihre Platine
 besondere Anforderungen haben, treffen Sie die erforderlichen
 Einstellungen hier und speichern die Design Rules unter 
 einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="5mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="6mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -17951,15 +17947,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -18332,7 +18328,7 @@ design rules under a new name.</description>
 <contactref element="D7" pad="A"/>
 <contactref element="JP1" pad="6"/>
 <contactref element="D5" pad="C"/>
-<via x="87.952175" y="59.433028125" extent="1-16" drill="0.6"/>
+<via x="88.46015" y="59.14275625" extent="1-16" drill="0.6"/>
 <via x="37.6626875" y="61.1020875" extent="1-16" drill="0.6"/>
 <via x="81.783909375" y="61.6100625" extent="1-16" drill="0.6"/>
 <via x="83.670671875" y="34.034296875" extent="1-16" drill="0.6"/>
@@ -18361,6 +18357,24 @@ design rules under a new name.</description>
 <via x="72.422665625" y="54.42585" extent="1-16" drill="0.6"/>
 <via x="115.890778125" y="54.570984375" extent="1-16" drill="0.6"/>
 <via x="115.890778125" y="46.7336625" extent="1-16" drill="0.6"/>
+<via x="91.798265625" y="27.866034375" extent="1-16" drill="0.6"/>
+<via x="92.814215625" y="22.0606125" extent="1-16" drill="0.6"/>
+<via x="90.056640625" y="18.57735625" extent="1-16" drill="0.6"/>
+<via x="89.76636875" y="15.021534375" extent="1-16" drill="0.6"/>
+<wire x1="94.99125" y1="63.714528125" x2="97.095715625" y2="64.0048" width="0.4064" layer="16"/>
+<wire x1="97.095715625" y1="64.0048" x2="98.619640625" y2="64.222503125" width="0.4064" layer="16"/>
+<wire x1="98.619640625" y1="64.222503125" x2="99.925859375" y2="64.512775" width="0.4064" layer="16"/>
+<wire x1="99.925859375" y1="64.512775" x2="101.885190625" y2="64.44020625" width="0.4064" layer="16"/>
+<wire x1="101.885190625" y1="64.44020625" x2="103.11884375" y2="64.44020625" width="0.4064" layer="16"/>
+<wire x1="107.110071875" y1="59.941003125" x2="107.110071875" y2="59.505596875" width="0.3048" layer="16"/>
+<wire x1="107.110071875" y1="59.505596875" x2="105.295875" y2="59.578165625" width="0.3048" layer="16"/>
+<wire x1="105.295875" y1="59.578165625" x2="105.295875" y2="56.457746875" width="0.3048" layer="16"/>
+<wire x1="105.295875" y1="56.457746875" x2="103.98965625" y2="56.167478125" width="0.3048" layer="16"/>
+<via x="103.98965625" y="56.167478125" extent="1-16" drill="0.6"/>
+<via x="107.182640625" y="60.013571875" extent="1-16" drill="0.6"/>
+<via x="95.57179375" y="54.716121875" extent="1-16" drill="0.6"/>
+<via x="98.32936875" y="49.2735375" extent="1-16" drill="0.6"/>
+<via x="91.65313125" y="48.475290625" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="VIN">
 <contactref element="L1" pad="P$1"/>
@@ -18697,12 +18711,15 @@ design rules under a new name.</description>
 <wire x1="86.0425" y1="58.7375" x2="80.645" y2="58.7375" width="0.254" layer="1"/>
 <wire x1="86.0425" y1="54.76875" x2="86.0425" y2="58.7375" width="0.254" layer="1"/>
 <wire x1="90.32875" y1="54.76875" x2="86.0425" y2="54.76875" width="0.254" layer="16"/>
-<wire x1="105.7275" y1="54.76875" x2="90.32875" y2="54.76875" width="0.254" layer="1"/>
 <wire x1="105.7275" y1="61.9125" x2="105.7275" y2="54.76875" width="0.254" layer="1"/>
 <wire x1="68.42125" y1="48.895" x2="68.41963125" y2="48.814790625" width="0.254" layer="1"/>
 <wire x1="105.7275" y1="61.9125" x2="105.8416" y2="61.932309375" width="0.254" layer="1"/>
 <via x="86.0425" y="54.76875" extent="1-16" drill="0.6096"/>
 <via x="90.32875" y="54.76875" extent="1-16" drill="0.6096"/>
+<wire x1="105.7275" y1="54.76875" x2="102.08295625" y2="54.76875" width="0.3048" layer="1"/>
+<wire x1="102.08295625" y1="54.76875" x2="100.2887" y2="52.97449375" width="0.3048" layer="1"/>
+<wire x1="100.2887" y1="52.97449375" x2="92.12300625" y2="52.97449375" width="0.3048" layer="1"/>
+<wire x1="92.12300625" y1="52.97449375" x2="90.32875" y2="54.76875" width="0.3048" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="S3" pad="P$2"/>
