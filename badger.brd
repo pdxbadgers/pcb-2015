@@ -18320,39 +18320,42 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="D5" pad="C"/>
 <contactref element="U$3" pad="1"/>
 <contactref element="D7" pad="A"/>
-<via x="5.007178125" y="10.88516875" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="18.867628125" y="30.98645" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="21.770340625" y="47.89475" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="31.8572625" y="45.717715625" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="38.1706625" y="61.029521875" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="87.734471875" y="58.70735" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="122.71215" y="42.37959375" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="123.65553125" y="60.739246875" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="84.0335125" y="34.106865625" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="57.183428125" y="63.56939375" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="78.590928125" y="26.196975" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="65.45615625" y="25.76156875" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="68.504003125" y="39.041475" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="65.528725" y="59.79586875" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="79.171471875" y="23.221696875" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="88.8229875" y="35.921059375" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="91.580565625" y="31.8572625" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="61.247221875" y="45.28230625" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="76.55903125" y="44.048653125" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="80.33255625" y="50.870025" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="67.125215625" y="46.298253125" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="91.508" y="51.595703125" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="100.071" y="47.604475" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="101.08695" y="51.7408375" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="80.04228125" y="40.85566875" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="86.936221875" y="43.903515625" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="103.55425625" y="55.877203125" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="97.1682875" y="55.6595" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="87.226496875" y="41.218509375" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="115.745640625" y="56.167475" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="116.97929375" y="45.790278125" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="88.75041875" y="33.163484375" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="88.02474375" y="28.736846875" extent="1-16" drill="0.6" shape="octagon"/>
+<via x="5.007178125" y="10.88516875" extent="1-16" drill="0.3302"/>
+<via x="18.867628125" y="30.98645" extent="1-16" drill="0.3302"/>
+<via x="21.770340625" y="47.89475" extent="1-16" drill="0.3302"/>
+<via x="31.8572625" y="45.717715625" extent="1-16" drill="0.3302"/>
+<via x="38.1706625" y="61.029521875" extent="1-16" drill="0.3302"/>
+<via x="58.48965" y="63.424259375" extent="1-16" drill="0.3302"/>
+<via x="65.311025" y="58.707353125" extent="1-16" drill="0.3302"/>
+<via x="80.332559375" y="49.85408125" extent="1-16" drill="0.3302"/>
+<via x="67.125221875" y="46.22569375" extent="1-16" drill="0.3302"/>
+<via x="61.392365625" y="45.354878125" extent="1-16" drill="0.3302"/>
+<via x="76.34133125" y="44.121225" extent="1-16" drill="0.3302"/>
+<via x="80.187425" y="41.000809375" extent="1-16" drill="0.3302"/>
+<via x="87.081365625" y="43.976090625" extent="1-16" drill="0.3302"/>
+<via x="87.081365625" y="43.976090625" extent="1-16" drill="0.3302"/>
+<via x="87.3716375" y="41.145946875" extent="1-16" drill="0.3302"/>
+<via x="100.2161375" y="47.45934375" extent="1-16" drill="0.3302"/>
+<via x="101.15951875" y="51.8134125" extent="1-16" drill="0.3302"/>
+<via x="91.435434375" y="51.595709375" extent="1-16" drill="0.3302"/>
+<via x="88.532721875" y="58.48965" extent="1-16" drill="0.3302"/>
+<via x="97.168290625" y="55.65950625" extent="1-16" drill="0.3302"/>
+<via x="103.55425625" y="55.877209375" extent="1-16" drill="0.3302"/>
+<via x="115.745646875" y="56.0949125" extent="1-16" drill="0.3302"/>
+<via x="123.72810625" y="60.739253125" extent="1-16" drill="0.3302"/>
+<via x="117.05186875" y="45.71771875" extent="1-16" drill="0.3302"/>
+<via x="122.857290625" y="42.30703125" extent="1-16" drill="0.3302"/>
+<via x="88.822990625" y="35.921065625" extent="1-16" drill="0.3302"/>
+<via x="61.392365625" y="45.354878125" extent="1-16" drill="0.3302"/>
+<via x="65.528728125" y="25.68900625" extent="1-16" drill="0.3302"/>
+<via x="78.953771875" y="26.55981875" extent="1-16" drill="0.3302"/>
+<via x="79.24404375" y="23.29426875" extent="1-16" drill="0.3302"/>
+<via x="88.097315625" y="28.736853125" extent="1-16" drill="0.3302"/>
+<via x="91.72570625" y="31.85726875" extent="1-16" drill="0.3302"/>
+<via x="88.677859375" y="33.090921875" extent="1-16" drill="0.3302"/>
+<via x="84.03351875" y="34.1794375" extent="1-16" drill="0.3302"/>
+<via x="89.476103125" y="19.448178125" extent="1-16" drill="0.3302"/>
+<via x="67.342925" y="39.33175" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="VIN">
 <contactref element="L1" pad="P$1"/>
@@ -18614,10 +18617,20 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="54.61" y1="38.1" x2="79.6925" y2="38.1" width="0.1524" layer="1"/>
 <wire x1="44.1325" y1="27.6225" x2="54.61" y2="38.1" width="0.1524" layer="1"/>
 <wire x1="35.8775" y1="27.6225" x2="44.1325" y2="27.6225" width="0.1524" layer="1"/>
-<wire x1="33.02" y1="24.765" x2="35.8775" y2="27.6225" width="0.1524" layer="1"/>
+<wire x1="33.02" y1="24.765" x2="33.517459375" y2="25.262459375" width="0.1524" layer="1"/>
+<wire x1="33.517459375" y1="25.262459375" x2="35.8775" y2="27.6225" width="0.1524" layer="1"/>
 <wire x1="98.1075" y1="58.42" x2="98.280575" y2="58.706859375" width="0.1524" layer="16"/>
 <wire x1="33.02" y1="24.765" x2="32.81020625" y2="24.916415625" width="0.1524" layer="1"/>
 <via x="79.6925" y="38.1" extent="1-16" drill="0.3302"/>
+<contactref element="D7" pad="C"/>
+<wire x1="34.252003125" y1="24.527915625" x2="34.179434375" y2="24.600484375" width="0.3048" layer="1"/>
+<wire x1="33.96173125" y1="24.8181875" x2="33.517459375" y2="25.262459375" width="0.3048" layer="1"/>
+<wire x1="37.593384375" y1="21.504278125" x2="37.593384375" y2="23.442665625" width="0.3048" layer="16"/>
+<wire x1="37.593384375" y1="23.442665625" x2="37.6626875" y2="23.51196875" width="0.3048" layer="16"/>
+<via x="37.6626875" y="23.51196875" extent="1-16" drill="0.3302"/>
+<wire x1="37.6626875" y1="23.51196875" x2="36.574171875" y2="24.600484375" width="0.3048" layer="1"/>
+<wire x1="36.574171875" y1="24.600484375" x2="34.179434375" y2="24.600484375" width="0.3048" layer="1"/>
+<wire x1="34.179434375" y1="24.600484375" x2="33.96173125" y2="24.8181875" width="0.3048" layer="1"/>
 </signal>
 <signal name="RX">
 <contactref element="U2" pad="RXD0"/>

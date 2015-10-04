@@ -10022,6 +10022,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-71.12" y1="58.42" x2="-71.12" y2="46.355" width="0.1524" layer="91"/>
 <junction x="-83.82" y="58.42"/>
 <label x="-78.74" y="66.04" size="1.778" layer="95"/>
+<pinref part="D7" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="RX" class="0">
